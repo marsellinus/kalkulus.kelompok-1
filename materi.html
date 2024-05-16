@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="materi.css">
+    <title>Materi Deret</title>
+</head>
+<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-white">
+    <nav class="bg-white bg-opacity-90 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold text-purple-800">Baris & Deret Aritmatika</a>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex space-x-4">
+                        <li><a href="home.html" class="text-purple-800 hover:text-purple-600">Home</a></li>
+                        <li><a href="profil.html" class="text-purple-800 hover:text-purple-600">Profile</a></li>
+                        <li><a href="materi.html" class="text-purple-800 hover:text-purple-600">Materi</a></li>
+                        <li><a href="kalkulator.html" class="text-purple-800 hover:text-purple-600">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-purple-800 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-5xl font-bold text-center mt-20 mb-8">Materi Deret</h1>
+        <div class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Barisan Aritmatika</h2>
+            <p class="text-gray-700 mb-4">
+                <b>Barisan aritmatika (Un) adalah barisan bilangan yang memiliki pola yang tetap.</b> 
+                Untuk polanya bisa berdasarkan operasi penjumlahan atau pengurangan. Jadi, setiap urutan suku memiliki selisih atau beda yang sama. Selisih inilah yang dinamakan beda, yang biasa disimbolkan dengan <b>b</b>.
+            </p>
+            <p class="text-gray-700 mb-4">
+                Misalnya, di suatu barisan memiliki suku pertama, yaitu 2. <b>Suku pertama</b> disimbolkan dengan U<sub>1</sub> atau a. Kemudian di suku kedua (U<sub>2</sub>), yaitu 5. Suku ketiga (U<sub>3</sub>), yaitu 8, dan seterusnya. Berarti, barisan ini memiliki beda 3 pada setiap sukunya.
+            </p>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                <b>2, 5, 8, ...</b>
+            </h3>
+            <p class="text-gray-700 mb-4">(setiap suku memiliki selisih atau beda, yaitu 3)</p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Rumus Barisan Aritmatika</h2>
+            <div class="bg-purple-100 bg-opacity-90 rounded-lg p-6">
+                <p class="text-gray-800">
+                    <b>Rumus mencari suku ke-<i>n</i> barisan aritmatika:</b><br>
+                    U<sub>n</sub> = U<sub>1</sub> + (n-1)b<br>
+                    atau<br>
+                    U<sub>n</sub> = a + (n-1)b<br><br>
+                    <b>Rumus mencari beda barisan aritmatika:</b><br>
+                    b = U<sub>n</sub> - U<sub>n-1</sub><br><br>
+                    <b>Keterangan:</b><br>
+                    U<sub>n</sub> = suku ke-n<br>
+                    U<sub>1</sub> = a = suku pertama (pertama barisan aritmatika)<br>
+                    U<sub>n-1</sub> = suku ke n-1<br>
+                    b = beda<br>
+                    n = banyak suku pada barisan aritmatika
+                </p>
+            </div>
+        </div>
+        <div class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Deret Aritmatika</h2>
+            <p class="text-gray-700 mb-4">
+                <b>Deret aritmatika (Sn) adalah jumlah suku ke-n pada barisan aritmatika.</b><br>
+                Di sini kita hanya menjumlahkan barisan aritmatikanya saja sampai ke suku yang diperintahkan. Misalnya mencari jumlah suku ke-5.
+            </p>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">3, 7, 11, 15, 19, …</h3>
+            <p class="text-gray-700 mb-4">Jumlah 5 suku pertamanya berarti,</p>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">3 + 7 + 11 + 15 + 19 = 55</h3>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Rumus Deret Aritmatika</h2>
+            <div class="bg-purple-100 bg-opacity-90 rounded-lg p-6">
+                <p class="text-gray-800">
+                    Jika mendapati soal mencari jumlah suku yang sangat banyak kita bisa menggunakan rumus:<br><br>
+                    S<sub>n</sub> = n/2 (a + U<sub>n</sub>)<br>
+                    atau<br>
+                    S<sub>n</sub> = n/2 (2a + (n-1)b)<br><br>
+                    <b>Keterangan:</b><br>
+                    S<sub>n</sub> = jumlah n suku pertama<br>
+                    a = suku pertama barisan aritmatika<br>
+                    b = beda<br>
+                    n = banyak suku barisan aritmatika
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
