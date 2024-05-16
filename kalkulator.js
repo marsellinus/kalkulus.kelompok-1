@@ -33,3 +33,12 @@ function calculateArithmeticSeries(a, d, n) {
     let sum = (n / 2) * (2 * a + (n - 1) * d);
     return `The sum of the first ${n} terms of the arithmetic series is: ${sum}`;
 }
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
