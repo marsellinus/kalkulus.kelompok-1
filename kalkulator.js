@@ -11,5 +11,5 @@ function generateSequence() {
         hasil = (sukuPertama + sukuPertama + (sukuKeN - 1) * beda) / 2 * sukuKeN;
     }
 
-    document.getElementById('sequenceResult').innerHTML = `Nilai deret aritmatika adalah: ${hasil}`;
+    document.getElementById('sequenceResult').innerHTML = `Nilai ${jenis} aritmatika adalah: ${hasil}`;
 }
