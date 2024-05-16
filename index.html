@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <title>Kalkulator Deret</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
     <nav class="bg-white bg-opacity-90 shadow-lg">
@@ -16,14 +16,14 @@
                 </div>
                 <div class="hidden md:block">
                     <ul class="flex space-x-4">
-                        <li><a href="home.html" class="text-purple-800 hover:text-purple-600">Home</a></li>
+                        <li><a href="index.html" class="text-purple-800 hover:text-purple-600">Home</a></li>
                         <li><a href="profil.html" class="text-purple-800 hover:text-purple-600">Profile</a></li>
                         <li><a href="materi.html" class="text-purple-800 hover:text-purple-600">Materi</a></li>
                         <li><a href="kalkulator.html" class="text-purple-800 hover:text-purple-600">Kalkulator</a></li>
                     </ul>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-purple-800 focus:outline-none">
+                    <button id="menu-toggle" class="text-purple-800 focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -31,8 +31,15 @@
                 </div>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-purple-800 hover:text-purple-600 hover:bg-purple-100">Home</a></li>
+                <li><a href="profil.html" class="block px-3 py-2 rounded-md text-base font-medium text-purple-800 hover:text-purple-600 hover:bg-purple-100">Profile</a></li>
+                <li><a href="materi.html" class="block px-3 py-2 rounded-md text-base font-medium text-purple-800 hover:text-purple-600 hover:bg-purple-100">Materi</a></li>
+                <li><a href="kalkulator.html" class="block px-3 py-2 rounded-md text-base font-medium text-purple-800 hover:text-purple-600 hover:bg-purple-100">Kalkulator</a></li>
+            </ul>
+        </div>
     </nav>
-
     <div class="container mx-auto px-4 py-8">
         <section id="home" class="flex flex-col-reverse md:flex-row items-center">
             <div class="md:w-1/2 p-6">
@@ -45,6 +52,18 @@
                 <img src="calculator-illustration.png.jpg" alt="Calculator Illustration" class="w-full h-auto max-w-xs md:max-w-md rounded-lg shadow-lg">
             </div>
         </section>
+    </div>
+    <div>
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                var menu = document.getElementById('mobile-menu');
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                } else {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
