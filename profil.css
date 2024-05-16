@@ -1,154 +1,30 @@
-/* Custom styles for the navigation menu */
-nav {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav .max-w-7xl {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-nav .flex {
+.profile-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
-nav .flex-shrink-0 a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #6b46c1;
-}
-
-nav .hidden.md\:block ul {
-    display: flex;
-    gap: 1rem;
-}
-
-nav .hidden.md\:block ul li a {
-    color: #6b46c1;
-    transition: color 0.3s;
-}
-
-nav .hidden.md\:block ul li a:hover {
-    color: #9f7aea;
-}
-
-nav .md\:hidden button {
-    color: #6b46c1;
-}
-
-nav .md\:hidden button:focus {
-    outline: none;
-}
-
-/* Styles for the main content */
-.container {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.bg-opacity-90 {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.rounded-lg {
-    border-radius: 0.5rem;
-}
-
-.shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.text-gray-800 {
-    color: #2d3748;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-lg {
-    font-size: 1.125rem;
-}
-
-.focus\:ring-indigo-500:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.6);
-}
-
-.focus\:border-indigo-500:focus {
-    border-color: #667eea;
-}
-
-.hover\:bg-indigo-700:hover {
-    background-color: #4c51bf;
-}
-
-.w-full {
-    width: 100%;
-}
-
-.py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.bg-indigo-600 {
-    background-color: #5a67d8;
-}
-
-.text-white {
-    color: white;
-}
-
-.rounded-md {
-    border-radius: 0.375rem;
-}
-
-.hover\:text-purple-600:hover {
-    color: #9f7aea;
-}
-
-.grid {
-    display: grid;
-    gap: 2rem;
-}
-
-.grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.profile {
+    flex: 0 0 calc(100% - 2rem); /* Lebar setiap anggota adalah 100% lebar layar dikurangi margin */
+    max-width: calc(100% - 2rem); /* Lebar maksimum setiap anggota adalah 100% lebar layar dikurangi margin */
+    margin-right: 1rem;
+    margin-bottom: 1rem; /* Memberi jarak bawah antara setiap anggota */
+    padding: 1rem; /* Memberi ruang di sekitar konten setiap anggota */
+    text-align: center; /* Pusatkan teks di dalam setiap anggota */
 }
 
 .profile img {
-    border-radius: 9999px;
-    width: 8rem;
-    height: 8rem;
-    margin: 0 auto 1rem;
+    width: 100%; /* Foto mengisi lebar kontainer */
+    max-width: 200px; /* Foto tidak terlalu besar */
+    height: auto; /* Foto menyesuaikan tinggi sesuai lebar */
+    margin-bottom: 1rem; /* Jarak bawah antara foto dan teks */
 }
 
 .profile h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2d3748;
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin-bottom: 0.5rem; /* Jarak bawah antara judul dan teks */
 }
 
 .profile p {
-    color: #718096;
+    font-size: 1rem; /* Ukuran font teks */
 }
