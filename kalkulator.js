@@ -10,7 +10,7 @@ function generateSequence() {
         result = "Hasil dari baris ke-" + sukuKeN + ' adalah ' + hasil;
     } else if (jenis === 'deret') {
         jumlahDeret = (sukuPertama + sukuPertama + (sukuKeN - 1) * beda) / 2 * sukuKeN;
-        result = "jumlah deret dari " + sukuPertama + "ke-"+  sukuKeN + " adalah" + jumlahDeret;
+        result = "jumlah deret dari " + sukuPertama + " ke-"+  sukuKeN + " adalah" + jumlahDeret;
     }
 
     document.getElementById('sequenceResult').innerHTML = result;
