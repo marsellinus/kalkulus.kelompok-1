@@ -1,30 +1,45 @@
+/* Kontainer profil */
 .profile-container {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
 
+/* Profil individu */
 .profile {
     flex: 0 0 calc(100% - 2rem); /* Lebar setiap anggota adalah 100% lebar layar dikurangi margin */
     max-width: calc(100% - 2rem); /* Lebar maksimum setiap anggota adalah 100% lebar layar dikurangi margin */
     margin-right: 1rem;
-    margin-bottom: 1rem; /* Memberi jarak bawah antara setiap anggota */
-    padding: 1rem; /* Memberi ruang di sekitar konten setiap anggota */
+    margin-bottom: 1.5rem; /* Jarak bawah antara setiap anggota */
+    margin-top: 1.5rem; /* Jarak atas antara setiap anggota */
+    padding: 2rem; /* Memberi ruang di sekitar konten setiap anggota */
     text-align: center; /* Pusatkan teks di dalam setiap anggota */
+    height: auto; /* Memastikan kontainer cukup tinggi */
+    min-height: 400px; /* Menambahkan minimum tinggi untuk membuat kontainer lebih panjang */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang dengan sedikit transparansi */
+    border-radius: 1rem; /* Membulatkan sudut kontainer */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek 3D */
 }
 
-.profile img {
-    width: 100%; /* Foto mengisi lebar kontainer */
-    max-width: 200px; /* Foto tidak terlalu besar */
-    height: auto; /* Foto menyesuaikan tinggi sesuai lebar */
-    margin-bottom: 1rem; /* Jarak bawah antara foto dan teks */
+/* Gambar profil */
+.profile-img {
+    width: 128px; /* Lebar gambar yang konsisten */
+    height: 128px; /* Tinggi gambar yang konsisten */
+    object-fit: cover; /* Memastikan gambar di-crop dan mengisi kotak */
+    margin-bottom: 1rem; /* Jarak bawah antara gambar dan teks */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    border: 4px solid rgba(255, 255, 255, 0.8); /* Tambahkan border putih untuk kontras */
 }
 
+/* Judul profil */
 .profile h2 {
-    font-size: 1.5rem; /* Ukuran font judul */
+    font-size: 1.75rem; /* Ukuran font judul */
     margin-bottom: 0.5rem; /* Jarak bawah antara judul dan teks */
+    color: #4A4A4A; /* Warna teks judul */
 }
 
+/* Teks profil */
 .profile p {
     font-size: 1rem; /* Ukuran font teks */
+    color: #6B7280; /* Warna teks */
 }
